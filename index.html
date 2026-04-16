@@ -154,16 +154,25 @@
 }
 
 .btn-outline {
-    background: var(--white);
-    color: var(--white);
-    border: 2px solid var(--pink-light);
-}
+    background: transparent;      /* Makes it see-through so the BTR background shows */
+    color: var(--white);         /* Makes the text white */
+    border: 2px solid var(--white); /* THIS makes the border white */
+    
+    padding: 0.75rem 2rem; 
+    border-radius: 50px;
+    font-weight: 600; 
+    font-size: 0.9rem; 
+    letter-spacing: 0.04em;
+    cursor: pointer; 
+    text-decoration: none;
+    transition: all 0.25s;
+  }
 
-.btn-outline:hover {
-    background: var(--white);
-    color: var(--dark-grey);
-    border: 2px solid var(--pink-light);
-}
+  .btn-outline:hover { 
+    background: var(--white);    /* On hover, it turns solid white */
+    color: var(--pink-deep);     /* On hover, text turns pink for contrast */
+    transform: translateY(-2px); 
+  }
 
 /* Layout Components */
 .dark-bg {
